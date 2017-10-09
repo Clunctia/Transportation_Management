@@ -38,7 +38,7 @@ province_water_level(tak,0).
 province_water_level(nakhon_si_thammarat,55).
 province_water_level(narathiwat,35).
 
-supply_car(toyota_hilux_vigo).
+supply_car(toyata_hilux_vigo).
 supply_car(izuzu_demax).
 supply_car(humvee).
 
@@ -63,6 +63,7 @@ vehicle_operate_level(alumarine,20).
 available(toyota_hilux_vigo,100).
 available(stormer,30).
 available(bolkow_kawasaki_117,5).
+available(m35a2c,5).
 
 flood(Province):-province_water_level(Province,Water_level),
 Water_level>30.

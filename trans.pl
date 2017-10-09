@@ -70,5 +70,5 @@ Water_level>30.
 vehicle_can_drive(X,W):-vehicle_tolerance_level(X,H),H>W.
 vehicle_can_float(X,W):-vehicle_operate_level(X,H),W>H.
 send_evacuation_car(Province,Amount):-flood(Province),province_water_level(Province,W),evac_car(X),vehicle_can_drive(X,W),available(X,N),N>Amount.
-send_supply_car(Province,Amount):-flood(Province),vehicle_can_drive(X,W),province_water_level(Province,W),supply_car(X),available(X,N),N>Amount.
+send_supply_car(Province,Amount):-flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
 send_boat(Province,Amount):-flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.

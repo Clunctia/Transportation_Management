@@ -61,9 +61,16 @@ vehicle_operate_level(stormer,40).
 vehicle_operate_level(alumarine,20).
 
 available(toyota_hilux_vigo,100).
+available(izuzu_demax,80).
+available(humvee,50).
+available(ashok_leyland,20).
 available(stormer,30).
 available(bolkow_kawasaki_117,5).
 available(m35a2c,5).
+available(palfinger,5).
+available(alumarine,5).
+available(polaris,5).
+
 
 flood(Province):-province_water_level(Province,Water_level),
 Water_level>30.

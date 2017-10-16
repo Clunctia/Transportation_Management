@@ -14,10 +14,7 @@
 #### province_water_level(province_name, water_level_value).
 Fact about value of water level in each provinces in Thailand.
 
-#### supply_car(vehicle_name).
-#### evac_car(vehicle_name).
-#### boat(vehicle_name).
-#### helicopter(vehicle_name).
+#### supply_car(vehicle_name). / evac_car(vehicle_name). / boat(vehicle_name). / helicopter(vehicle_name).
 Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
 
 #### vehicle_tolerance_level(vehicle_name, water_level).

@@ -1,7 +1,6 @@
-# Transportation management
-# during flood using expert system
+## Transportation management during flood using expert system
 
-## Group Members
+### Group Members
 - 5810545033  Nuttapong   Rojanavanich
 - 5810545386  Chayanin		Punjakunaporn
 - 5810545491  Sorawish		Laovakul

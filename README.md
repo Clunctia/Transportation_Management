@@ -15,6 +15,9 @@
 
 ```prolog
 province_water_level(province_name, water_level_value).
+
+Ex:
+province_water_level(phayao,0).
 ```
 > Fact about value of water level in each provinces in Thailand.
 

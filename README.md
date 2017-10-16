@@ -13,28 +13,30 @@
 
 ### Facts
 
-> province_water_level(province_name, water_level_value).
+```prolog
+province_water_level(province_name, water_level_value).
+```
+> Fact about value of water level in each provinces in Thailand.
 
-Fact about value of water level in each provinces in Thailand.
+```prolog
+supply_car(vehicle_name).
+evac_car(vehicle_name).
+boat(vehicle_name).
+helicopter(vehicle_name).
+```
+> Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
 
-> supply_car(vehicle_name).
+```prolog
+vehicle_tolerance_level(vehicle_name, water_level).
+```
+> Facts about value of highest water level that each cars can tolerate.
 
-> evac_car(vehicle_name).
+```prolog
+vehicle_operate_level(stormer, operate_level).
+```
+> Facts about value of highest water level that each boats can operate.
 
-> boat(vehicle_name).
-
-> helicopter(vehicle_name).
-
-Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
-
-> vehicle_tolerance_level(vehicle_name, water_level).
-
-Facts about value of highest water level that each cars can tolerate.
-
-> vehicle_operate_level(stormer, operate_level).
-
-Facts about value of highest water level that each boats can operate.
-
-> available(vehicle_name, available_amount).
-
-Facts about available amoun of each vehicles.
+```prolog
+available(vehicle_name, available_amount).
+```
+> Facts about available amoun of each vehicles.

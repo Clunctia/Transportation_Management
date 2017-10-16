@@ -1,3 +1,4 @@
+
 ## Transportation management during flood using expert system
 
 ### Group Members
@@ -15,14 +16,27 @@
 
 ```prolog
 province_water_level(province_name, water_level_value).
+Ex:
+province_water_level(phrae,3).
 ```
 > Fact about value of water level in each provinces in Thailand.
 
 ```prolog
 supply_car(vehicle_name).
+Ex:
+supply_car(toyata_hilux_vigo).
+
 evac_car(vehicle_name).
+Ex:
+evac_car(m35a2c).
+
 boat(vehicle_name).
+Ex:
+boat(stormer).
+
 helicopter(vehicle_name).
+Ex:
+helicopter(bolkow_kawasaki_117).
 ```
 > Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
 
@@ -33,11 +47,17 @@ vehicle_tolerance_level(vehicle_name, water_level).
 
 ```prolog
 vehicle_operate_level(stormer, operate_level).
+Ex:
+vehicle_tolerance_level(toyota_hilux_vigo,70).
+vehicle_tolerance_level(izuzu_demax,70).
 ```
 > Facts about value of highest water level that each boats can operate.
 
 ```prolog
 available(vehicle_name, available_amount).
+Ex:
+available(toyota_hilux_vigo,100).
+available(izuzu_demax,80).
 ```
 > Facts about available amoun of each vehicles.
 
@@ -49,7 +69,8 @@ available(vehicle_name, available_amount).
 flood(Province):-province_water_level(Province,Water_level),Water_level>30.
 ```
 > If the water level is higher than 30 cm in the specified province flood returns true
-> Ex. flood(ang_thong)
+
+>Ex. flood(ang_thong)
 ```prolog
 vehicle_can_drive(X,W):-vehicle_tolerance_level(X,H),H>W.
 ```

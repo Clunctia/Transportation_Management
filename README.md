@@ -70,11 +70,14 @@ flood(Province):-province_water_level(Province,Water_level),Water_level>30.
 ```
 > If the water level is higher than 30 cm in the specified province flood returns true
 
->Ex. flood(ang_thong)
+>Ex. flood(ang_thong).
 ```prolog
 vehicle_can_drive(X,W):-vehicle_tolerance_level(X,H),H>W.
 ```
 > Returns true if the specified water level with the vehicle's level of water it can drive normally
+
+>EX. vehicle_can_drive(humvee,40).
+return true
 ```prolog
 vehicle_can_float(X,W):-vehicle_operate_level(X,H),W>H.
 ```

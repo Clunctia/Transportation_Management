@@ -1,10 +1,10 @@
 # Transportation_Management
 
 ## Group Members
-- NUTTAPONG	  ROJANAVANICH			      5810545033
-- CHAYANIN		PUNJAKUNAPORN			      5810545386
-- SORAWISH		LAOVAKUL				        5810545491
-- KEETAWAT		SRICHOMPOO			        5810545840
-- KAMONTAT		CHANTHRACHIRATHUMRONG	  5810546552
-- KASIDID		  PHOLWANNABHA			      5810546579
-- NAPON		    KITTISIRIPRASERT			  5810546684
+- 5810545033  Nuttapong   Rojanavanich
+- 5810545386  Chayanin		Punjakunaporn
+- 5810545491  Sorawish		Laovakul
+- 5810545840  Keetawat		Srichompoo
+- 5810546552  Kamontat		Chanthrachirathumrong
+- 5810546579  Kasidid		  Pholwannabha
+- 5810546684  Napon		    Kittisiriprasert

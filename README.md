@@ -94,12 +94,12 @@ send_evacuation_car(Province,Amount):flood(Province),province_water_level(Provin
 
 > Ex. send_evacuation_car(ang_thong,2).
 ```prolog
-send_supply_car(Province,Amount):flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
+send_supply_car(Province,Amount,X):flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
 ```
 > Calculate and returns available supply car that can be sent to the province
 
 > Ex. send_supply_car(bangkok,5).
-```prolog send_boat(Province,Amount):flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
+```prolog send_boat(Province,Amount,X):flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
 ```
 > Calculate and returns available boat that can be sent to the province
 
@@ -116,11 +116,14 @@ vehicle_can_drive(X,W):-vehicle_tolerance_level(X,H),H>W.
 vehicle_can_float(X,W):-vehicle_operate_level(X,H),W>H.
 ```
 ```prolog
-send_evacuation_car(Province,Amount):-flood(Province),province_water_level(Province,W),evac_car(X),vehicle_can_drive(X,W),available(X,N),N>Amount.
+send_evacuation_car(Province,Amount,X):-flood(Province),province_water_level(Province,W),evac_car(X),vehicle_can_drive(X,W),available(X,N),N>Amount.
+
+Ex:
+send_evacuation_car(chiang_rai, 100, X).
 ```
 ```prolog
-send_supply_car(Province,Amount):-flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
+send_supply_car(Province,Amount,X):-flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
 ```
 ```prolog
-send_boat(Province,Amount):-flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
+send_boat(Province,Amount,X):-flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
 ```

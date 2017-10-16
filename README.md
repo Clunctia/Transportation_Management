@@ -12,6 +12,7 @@
 ### Facts
 
 province_water_level(province_name, water_level_value).
+
 Fact about value of water level in each provinces in Thailand.
 
 supply_car(vehicle_name).

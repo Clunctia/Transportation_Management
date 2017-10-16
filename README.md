@@ -71,6 +71,8 @@ flood(Province):-province_water_level(Province,Water_level),Water_level>30.
 > If the water level is higher than 30 cm in the specified province flood returns true
 
 > Ex. flood(ang_thong).
+
+> Ex. flood(pichit).
 ```prolog
 vehicle_can_drive(X,W):-vehicle_tolerance_level(X,H),H>W.
 ```
@@ -89,13 +91,19 @@ return true
 send_evacuation_car(Province,Amount):flood(Province),province_water_level(Province,W),evac_car(X),vehicle_can_drive(X,W),available(X,N),N>Amount.
 ```
 > Calculate and returns available evacuation car that can be sent to the province
+
+> Ex. send_evacuation_car(ang_thong,2).
 ```prolog
 send_supply_car(Province,Amount):flood(Province),vehicle_can_drive(X,W),supply_car(X),province_water_level(Province,W),available(X,N),N>Amount.
 ```
 > Calculate and returns available supply car that can be sent to the province
+
+> Ex. send_supply_car(bangkok,5).
 ```prolog send_boat(Province,Amount):flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
 ```
 > Calculate and returns available boat that can be sent to the province
+
+> Ex. send_boat(chiang_rai,1).
 
 ```prolog
 flood(Province):-province_water_level(Province,Water_level),

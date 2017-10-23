@@ -18,6 +18,7 @@
 province_water_level(province_name, water_level_value).
 ```
 > Fact about value of water level in each provinces in Thailand.
+
 > Ex.: province_water_level(phrae,3).
 
 ```prolog
@@ -27,9 +28,13 @@ boat(vehicle_name).
 helicopter(vehicle_name).
 ```
 > Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
+
 > Ex.1: supply_car(toyata_hilux_vigo).
+
 > Ex.2: evac_car(m35a2c).
+
 > Ex.3: boat(stormer).
+
 > Ex.4: helicopter(bolkow_kawasaki_117).
 
 ```prolog
@@ -41,14 +46,18 @@ vehicle_tolerance_level(vehicle_name, water_level).
 vehicle_operate_level(stormer, operate_level).
 ```
 > Facts about value of highest water level that each boats can operate.
+
 > Ex.1: vehicle_tolerance_level(toyota_hilux_vigo,70).
+
 > Ex.2: vehicle_tolerance_level(izuzu_demax,70).
 
 ```prolog
 available(vehicle_name, available_amount).
 ```
 > Facts about available amoun of each vehicles.
+
 > Ex.1: available(toyota_hilux_vigo,100).
+
 > Ex.2: available(izuzu_demax,80).
 
 ---

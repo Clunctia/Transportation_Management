@@ -48,8 +48,8 @@ vehicle_operate_level(stormer, operate_level).
 available(vehicle_name, available_amount).
 ```
 > Facts about available amoun of each vehicles.
-Ex 1: available(toyota_hilux_vigo,100).
-Ex 2: available(izuzu_demax,80).
+> Ex 1: available(toyota_hilux_vigo,100).
+> Ex 2: available(izuzu_demax,80).
 
 ---
 

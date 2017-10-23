@@ -86,7 +86,8 @@ send_supply_car(Province,Amount,X):-flood(Province),vehicle_can_drive(X,W),suppl
 - Calculate and returns available supply car that can be sent to the province
 - Ex.: send_supply_car(bangkok,5).
 
-```prolog send_boat(Province,Amount,X):-flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
+```prolog
+send_boat(Province,Amount,X):-flood(Province),vehicle_can_float(X,W),province_water_level(Province,W),boat(X),available(X,N),N>Amount.
 ```
 - Calculate and returns available boat that can be sent to the province
 - Ex.: send_boat(chiang_rai,1).

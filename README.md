@@ -16,29 +16,21 @@
 
 ```prolog
 province_water_level(province_name, water_level_value).
-Ex:
-province_water_level(phrae,3).
 ```
 > Fact about value of water level in each provinces in Thailand.
+Ex: province_water_level(phrae,3).
 
 ```prolog
 supply_car(vehicle_name).
-Ex:
-supply_car(toyata_hilux_vigo).
-
 evac_car(vehicle_name).
-Ex:
-evac_car(m35a2c).
-
 boat(vehicle_name).
-Ex:
-boat(stormer).
-
 helicopter(vehicle_name).
-Ex:
-helicopter(bolkow_kawasaki_117).
 ```
 > Facts about defining vehicle is supply car, evacuation car, boat, or helicopter.
+Ex: supply_car(toyata_hilux_vigo).
+Ex: evac_car(m35a2c).
+Ex: boat(stormer).
+Ex: helicopter(bolkow_kawasaki_117).
 
 ```prolog
 vehicle_tolerance_level(vehicle_name, water_level).
@@ -47,19 +39,17 @@ vehicle_tolerance_level(vehicle_name, water_level).
 
 ```prolog
 vehicle_operate_level(stormer, operate_level).
-Ex:
-vehicle_tolerance_level(toyota_hilux_vigo,70).
-vehicle_tolerance_level(izuzu_demax,70).
 ```
 > Facts about value of highest water level that each boats can operate.
+> Ex 1: vehicle_tolerance_level(toyota_hilux_vigo,70).
+> Ex 2: vehicle_tolerance_level(izuzu_demax,70).
 
 ```prolog
 available(vehicle_name, available_amount).
-Ex:
-available(toyota_hilux_vigo,100).
-available(izuzu_demax,80).
 ```
 > Facts about available amoun of each vehicles.
+Ex 1: available(toyota_hilux_vigo,100).
+Ex 2: available(izuzu_demax,80).
 
 ---
 
